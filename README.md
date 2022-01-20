@@ -35,7 +35,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The MS Movie Graph is a large Neo4j database including some of the largest resources available on the Internet concerning the Movies domain. Since we cannot re-distribute these resources, we provide the code to assemble the database once these are obtained from the official sources. Thjis version covers IMDB, Wikidata and Movielens.
+The MS Movie Graph is a large Neo4j database including some of the largest resources available on the Internet concerning the Movies domain. Since we cannot re-distribute these resources, we provide the code to assemble the database once these are obtained from the official sources. This version cross-references IMDB, Wikidata, Inspired and Movielens.
 
 
 <!-- GETTING STARTED -->
@@ -49,13 +49,16 @@ To get a local copy up and running follow these simple steps.
    ```sh
    git clone https://github.com/antori82/MS_MovieGraph.git
    ```
-2. Download the IMDB data at https://www.imdb.com/interfaces/ and put them in a folder named "IMDB"
-3. Download the Movielens dataset and put it in a folder named "Movielens"
-4. Run the tsvProcess.py script to pre-process the IMDB data
-5. Set up the Neo4j connection variables and run the CreateDatabase.py script to import the IMDB data
-6. Run the ImportAwards.py script to import data concering awards from Wikidata
-7. Run the Import MovielensRatings.py script to import Movielens data
-8. Run the ImportWikiNames.py script to import, from Wikidata, alternative names of the movies rated in Movielens
+2.  Download the IMDB data at https://www.imdb.com/interfaces/ and put them in a folder named "IMDB"
+3.  Download the Movielens dataset and put it in a folder named "Movielens"
+4.  Download the Inspired dataset and put in in a folder named "Inspired"
+5.  Run the tsvProcess.py script to pre-process the IMDB data
+6.  Set up the Neo4j connection variables and run the CreateDatabase.py script to import the IMDB data
+7.  Run the ImportAwards.py script to import data concering awards from Wikidata
+8.  Run the Import MovielensRatings.py script to import Movielens data
+9.  Run the ImportWikiNames.py script to import, from Wikidata, alternative names of the movies rated in Movielens
+10.  Run the Inspired_neo4j.py script to import Inspired in the database
+11. Run the ConnectDatasets.py script to create references from Inspired to the knowledge domain graph
 
 
 
